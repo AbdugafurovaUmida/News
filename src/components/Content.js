@@ -13,6 +13,7 @@ import {
 import { Rate } from 'antd';
 import newsarr from './newsArr';
 import News from './news';
+import { Pagination } from 'antd';
 
 
 const IconFont = createFromIconfontCN({
@@ -74,6 +75,23 @@ const Demo = () => (
     </TabPane>
   </Tabs>
 );
+
+
+// let start = Date.now(); 
+
+// let timer = setInterval(function() {
+//   let timePassed = Date.now() - start;
+
+//   if (timePassed >= 2000) {
+//     return;
+//   }
+//   draw(timePassed);
+
+// }, 20);
+// function draw(timePassed) {
+//   train.style.left = timePassed / 5 + 'px';
+// }
+
 function Content() {
   return (
     <section className="content">
@@ -99,11 +117,11 @@ function Content() {
               <Col span={7}>
                 <article>
                   <div className='card-posts'>
-                    <img src={newsarr[10].urlToImage} className='card-posts__img' alt='' />
+                    <img src={newsarr[12].urlToImage} className='card-posts__img' alt='' />
                     <div className='card__post'>
-                      <div className='card__post__category'>{newsarr[10].author}</div>
+                      <div className='card__post__category'>{newsarr[5].author}</div>
                       <div>
-                        <h5><a className="card__post__title" href="#">{newsarr[10].title}</a></h5>
+                        <h5><a className="card__post__title" href="#">{newsarr[12].title}</a></h5>
                       </div>
                     </div>
                   </div>
@@ -152,18 +170,122 @@ function Content() {
 
         <h3>Sports</h3>
         <Slider defaultValue={35} tooltipVisible />
-        <Carousel autoplay>
-          <div>
-            <h3 style={contentStyle}>1</h3>
+        <Carousel  autoplay>
+          <div className='slick'>
+                  <div className='slick-posts'>
+                    <img src={newsarr[5].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slick__post__category'>{newsarr[5].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[5].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='slick-posts'>
+                    <img src={newsarr[13].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slcik__post__category'>{newsarr[13].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[13].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='slick-posts'>
+                    <img src={newsarr[5].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slick__post__category'>{newsarr[5].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[5].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
           </div>
-          <div>
-            <h3 style={contentStyle}>2</h3>
+          <div className='slick'>
+          <div className='slick-posts'>
+                    <img src={newsarr[5].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slick__post__category'>{newsarr[5].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[5].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='slick-posts'>
+                    <img src={newsarr[13].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slcik__post__category'>{newsarr[13].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[13].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='slick-posts'>
+                    <img src={newsarr[5].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slick__post__category'>{newsarr[5].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[5].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
           </div>
-          <div>
-            <h3 style={contentStyle}>3</h3>
+          <div className='slick'>
+          <div className='slick-posts'>
+                    <img src={newsarr[5].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slick__post__category'>{newsarr[5].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[5].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='slick-posts'>
+                    <img src={newsarr[13].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slcik__post__category'>{newsarr[13].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[13].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='slick-posts'>
+                    <img src={newsarr[5].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slick__post__category'>{newsarr[5].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[5].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
           </div>
-          <div>
-            <h3 style={contentStyle}>4</h3>
+          <div className='slick'>
+          <div className='slick-posts'>
+                    <img src={newsarr[5].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slick__post__category'>{newsarr[5].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[5].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='slick-posts'>
+                    <img src={newsarr[13].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slcik__post__category'>{newsarr[13].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[13].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='slick-posts'>
+                    <img src={newsarr[5].urlToImage} className='slick-posts__img' alt='' />
+                    <div className='slick__post'>
+                      <div className='slick__post__category'>{newsarr[5].author}</div>
+                      <div>
+                        <h5><a className="slick__post__title" href="#">{newsarr[5].title}</a></h5>
+                      </div>
+                    </div>
+                  </div>
           </div>
         </Carousel>
 
@@ -220,6 +342,9 @@ function Content() {
             </aside>
           </Col>
         </Row>
+        <div className='content-pagination'>
+          <Pagination defaultCurrent={6} total={500} />
+        </div>
       </div>
     </section>
   );

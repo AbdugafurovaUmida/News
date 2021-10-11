@@ -3,9 +3,21 @@ import { Carousel } from 'antd';
 import newsarr from './newsArr';
 import News from './news';
 
+
 const newsList = newsarr.map((el) => {
   return <News newsObj={el} />
 });
+
+
+function NewsPoster(props){
+  if(props.poster){
+    return <img src={props.poster} alt=""/>
+  }else{
+    return <div className = 'poster'>Poster</div>
+  }
+}
+
+
 function Intro() {
   return (
     <section className='Intro'>
@@ -14,12 +26,12 @@ function Intro() {
           <Col span={14}>
             <Carousel autoplay>
               <div className='carousel'>
-                <img className='carousel__image' src={newsarr[0].urlToImage} alt='' />
+                <NewsPoster poster={newsarr[3].urlToImage} />
                 <div className='carousel-info'>
-                  <div className='carousel__theme'>{newsarr[0].author}</div>
-                  <h3 className='carousel__title'>{newsarr[0].title}</h3>
-                  <p className='carousel__description'>{newsarr[0].description}</p>
-                  <span className='carousel__published'>{newsarr[0].publishedAt}</span>
+                  <div className='carousel__theme'>{newsarr[3].author}</div>
+                  <h3 className='carousel__title'>{newsarr[3].title}</h3>
+                  <p className='carousel__description'>{newsarr[3].description}</p>
+                  <span className='carousel__published'>{newsarr[3].publishedAt}</span>
                 </div>
               </div>
               <div className='carousel'>

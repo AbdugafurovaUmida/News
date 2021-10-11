@@ -154,7 +154,34 @@ let news = [
           "urlToImage":"https://www.swissinfo.ch/resource/image/47005724/landscape_ratio16x9/1920/1080/efdfbd84c633ad04161cbeae37c27f31/B2552DCCAC83EFB62B45A9A1C155DC0D/image_doc-9p784b.jpg",
           "publishedAt":"2021-10-06T05:41:46Z",
           "content":"Este contenido fue publicado el 06 octubre 2021 - 00:2106 octubre 2021 - 00:21\r\n(AFP)Un tribunal de Los Ángeles no vio este martes vínculo de causalidad entre la exposición al herbicida Roundup y una… [+1910 chars]"
-       }
+       },
+       {
+         "source":{
+            "id":null,
+            "name":"swissinfo.ch"
+         },
+         "author":null,
+         "title":"Madre pierde en EEUU demanda contra Monsanto por efectos de Roundup - swissinfo.ch",
+         "description":"Un tribunal de Los Ángeles no vio este martes vínculo de causalidad entre la exposición al herbicida Roundup y una forma rara de cáncer desarrollada por un niño expuesto a este producto de la compañía Monsanto. Ezra Clark tenía 4 años en febrero de 2016, cuan…",
+         "url":"https://www.swissinfo.ch/spa/afp/madre-pierde-en-eeuu-demanda-contra-monsanto-por-efectos-de-roundup/47005722",
+         "urlToImage":"https://retnews.netlify.app/images/thumb/news6.jpg",
+         "publishedAt":"2021-10-06T05:41:46Z",
+         "content":"Este contenido fue publicado el 06 octubre 2021 - 00:2106 octubre 2021 - 00:21\r\n(AFP)Un tribunal de Los Ángeles no vio este martes vínculo de causalidad entre la exposición al herbicida Roundup y una… [+1910 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"swissinfo.ch"
+         },
+         "author":'Elizabeth',
+         "title":"Madre pierde en EEUU demanda contra Monsanto por efectos de Roundup - swissinfo.ch",
+         "description":"Un tribunal de Los Ángeles no vio este martes vínculo de causalidad entre la exposición al herbicida Roundup y una forma rara de cáncer desarrollada por un niño expuesto a este producto de la compañía Monsanto. Ezra Clark tenía 4 años en febrero de 2016, cuan…",
+         "url":"https://www.swissinfo.ch/spa/afp/madre-pierde-en-eeuu-demanda-contra-monsanto-por-efectos-de-roundup/47005722",
+         "urlToImage":"https://retnews.netlify.app/images/thumb/news5.jpg",
+         "publishedAt":"2021-10-06T05:41:46Z",
+         "content":"Este contenido fue publicado el 06 octubre 2021 - 00:2106 octubre 2021 - 00:21\r\n(AFP)Un tribunal de Los Ángeles no vio este martes vínculo de causalidad entre la exposición al herbicida Roundup y una… [+1910 chars]"
+      },
+       
     ];
 
  export default news;

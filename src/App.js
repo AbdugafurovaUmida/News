@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Intro from './components/Intro';
 import Content from './components/Content';
 import Footer from './components/Footer';
-import { Row, Col } from 'antd';
+
 
 const style = {
   height: 40,
@@ -25,7 +25,6 @@ function App() {
       <Header />
       <Intro />
       <Content />
-      <Footer />
       <BackTop>
         <div style={style}>UP</div>
       </BackTop>
