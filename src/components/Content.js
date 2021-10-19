@@ -16,6 +16,7 @@ import News from './news';
 import { Pagination } from 'antd';
 
 
+
 const IconFont = createFromIconfontCN({
   scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
 });
@@ -109,6 +110,7 @@ function Content() {
                       <div className='card__post__category'>{newsarr[5].author}</div>
                       <div>
                         <h5><a className="card__post__title" href="#">{newsarr[5].title}</a></h5>
+                        <button>Delete</button>
                       </div>
                     </div>
                   </div>
@@ -122,6 +124,7 @@ function Content() {
                       <div className='card__post__category'>{newsarr[5].author}</div>
                       <div>
                         <h5><a className="card__post__title" href="#">{newsarr[12].title}</a></h5>
+                        <button>Delete</button>
                       </div>
                     </div>
                   </div>

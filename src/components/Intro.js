@@ -1,7 +1,17 @@
+
 import { Row, Col } from 'antd';
 import { Carousel } from 'antd';
 import newsarr from './newsArr';
 import News from './news';
+
+
+
+
+
+// const handleDelete = (id) => {
+//   const newsArr = news.filter((el)=> el.id !== id);
+//   setNews(newsArr);
+// };
 
 
 const newsList = newsarr.map((el) => {
@@ -32,6 +42,7 @@ function Intro() {
                   <h3 className='carousel__title'>{newsarr[3].title}</h3>
                   <p className='carousel__description'>{newsarr[3].description}</p>
                   <span className='carousel__published'>{newsarr[3].publishedAt}</span>
+                  <button>{newsarr.id}</button>
                 </div>
               </div>
               <div className='carousel'>
